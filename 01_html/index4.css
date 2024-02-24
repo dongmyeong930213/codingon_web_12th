@@ -1,0 +1,17 @@
+.zoo >  *:nth-child(2) {background-color: aqua;}
+
+
+
+/* 가상 요소 선택자 */ 
+.box::before {
+    content: '택시~';color: red;
+}
+
+.box::after {content: '빨리!!';color: blue;}
+
+
+[disabled] {background-color: darkgray;}
+
+
+[placeholder="이름" {background-color: orange;}]
+
