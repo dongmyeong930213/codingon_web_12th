@@ -35,7 +35,12 @@ margin: 50px;
 border-style: solid;
 border-color: limegreen;
 
-border-radius: 20px;
+/* border-radius: 20px; */
+
+border-radius: 0px 50px;
 
 
+/* visibility: hidden, visible; */
+/* visibility: hidden; */
+visibility: visible;
 }
