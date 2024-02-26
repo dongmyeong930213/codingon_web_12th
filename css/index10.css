@@ -1,0 +1,20 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: #ccc;
+    background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+/* background-image: url(./); */
+    
+background-repeat: no-repeat;
+/* background-repeat: repeat-x; */
+/* background-repeat: repeat-y; */
+
+
+background-position: center;
+
+width: 100px;
+height: 200px;
+background-size: contain;
+}
+
+

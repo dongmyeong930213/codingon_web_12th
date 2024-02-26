@@ -1,0 +1,24 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+  }
+  .item{
+    width: 100px;
+    height: 100px;
+  }
+  .item1{
+    background-color: red;
+  }
+  .item2{
+    background-color: skyblue;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .item3{
+    background-color: lightgreen;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
