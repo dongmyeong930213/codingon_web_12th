@@ -1,0 +1,30 @@
+header {
+    background-color: #ccc;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.left-box {
+    display: flex;
+    align-items: center;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0 0 0 16px;
+}
+
+.menu:not(:last-child) {
+    margin-right: 16px;
+}
+
+.right-box {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
