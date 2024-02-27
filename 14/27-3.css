@@ -1,0 +1,16 @@
+div {
+    width: 100px;
+    height: 100px;
+background-color: black;
+color: white;
+overflow-y: scroll;
+
+transition-property: all;
+transition-delay: 0.5s;
+transition-duration: 1s;
+}
+
+div:hover {
+    width: 300px;
+    height: 300px;
+}

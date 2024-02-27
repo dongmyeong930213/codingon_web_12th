@@ -1,0 +1,21 @@
+.bounce-ball1 {
+    position: relative;
+    left: 100px;
+    top: 0;
+  
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+
+@keyframes bounce1 {
+        to {
+            top: 50px;
+          }
+          from {
+            top: 300px;
+          }
+        }
+        
