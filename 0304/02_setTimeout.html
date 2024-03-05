@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setTimeout(함수,시간)
+        // 일정한 시간이 지났을때 정해진 함수를 실행
+        //setInterval (함수,시간) ->지정된 시간이 경과할때마다 동일한 함수를 실행, 반복
+
+        let timeclear = setTimeout(function(){
+            console.log("1초 경과")
+        }, 2000);
+
+        //setTimeout clear =>
+        clearTimeout(timeclear)
+
+        //setInterval clear =>
+
+        let interclear = setInterval(function(){
+            console.log('별', 500);
+        })
+        clearTimeout(interclear)
+
+
+
+
+    </script>
+
+
+</body>
+</html>

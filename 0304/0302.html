@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>heading</h1> 
+
+   <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+   </ul>
+
+   <div id="demo">주문내역을 입력하세요</div>
+   <p class="mystyle"></p>
+   <p class="'mystyle demo"></p>
+   <!-- <p class="mystyle demo"></p> -->
+
+<script>
+let myid = document.getElementsByID("demo");
+let myclass = document.getElementsByClass("mystyle");
+let mytag =document.getElementsByTagName("p");
+console.log(myid);
+console.log(myclass);
+console.log(mytag);
+let mydemo = document.querySelector("#demo");
+let myclass2 = document.querySelector(".mystyle"); // 첫번째
+let myclass3 = document.querySelectorAll(".mystyle");
+
+console.log(mydemo);
+console.log(myclass2);
+console.log(myclass3);
+
+// 이벤트 : 사용자가 클릭, 휠 , 브라우저가 상하 , 브라우저의 크기변경
+//이벤트 리스너 (event Listener)
+//이벤트 감지 onclick onscroll (뒤에있는 이벤트만 감지)
+console.log(myid.innerText)
+myid.innerText="동명";
+myid.innerHTML="<i> 동명 </i>"
+// textcontent : 양옆에 내용에 공백이 있어도 그대로 출력
+let ul = document.createElement('ul');
+
+for(let i=0; i<5; i++){
+let ul = document.createElement('li');
+li.innerText="menu" + i;
+ul.appendChild(li);
+}
+console.log(ul);
+document.body.appendChild(ul)
+</script>
+</body>
+</html>

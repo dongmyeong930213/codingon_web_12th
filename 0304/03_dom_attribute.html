@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {background-color: gold;}
+        .democlass{text-decoration: underline; background-color: orange;}
+    .section1 {font-size: 1.5rem; color: blue;}
+    </style>
+</head>
+<body>
+    <!-- <div id="div1" style="background-color: red; text-align: center;">div</div>
+    <script>
+        let div = document.getElementById('div1');
+        // get, attribute
+        div1.getAttribute('style');
+        console.log(mystyle)
+    </script> -->
+    <h1 id="myH1" class="mystyle">The Element Object</h1>
+    <p id="section1"></p>
+    <div class="demo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi, nemo officiis dolorum ullam voluptate consequatur doloribus maiores soluta necessitatibus expedita hic, neque non? Reprehenderit molestias asperiores doloribus earum ad!</div>
+    <button onclick="myF()">Add Class</button>
+    <script>
+        // const elem = document.getElementById('myH1');
+        // let txt = elem.getAttribute('class');
+        // let x = document.getElementById('section1')
+        // x.innerText = txt;
+        
+        let txt = document.getElementById('myH1').getAttribute('class');
+        document.getElementById('section1').innerText = txt;
+
+     // setAttribute( a,b ) 
+        // function myF(){
+        //     document.getElementById('myH1').setAttribute('class', 'democlass')
+
+        // }
+
+        
+        function myF(){
+            document.getElementById('section1').setAttribute('class','section1')
+        }
+
+    </script>
+</body>
+</html>
