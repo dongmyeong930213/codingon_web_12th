@@ -131,3 +131,54 @@ function emptyJS(){
 function emptyJquery(){
 $('ul.name').empty();
 }
+
+function findParent(){
+console.log(document.querySelector('.child2').parentElement);
+console.log($('child2').parent())
+}
+
+function findParents(){
+    console.log($('child2').parents())
+}
+
+function findNext(){
+console.log(document.querySelector('.child2').nextElementSibling);
+console.log($('.child2').next())
+}
+
+function findPrev(){
+console.log(document.querySelector('.child2').previousElementSibling);
+console.log($('.child2').prev())
+}
+
+function findChildren(){
+console.log(document.querySelector('.parent').children);
+console.log($('.parent').children())
+}
+
+// -----------------클래스 조작
+function addClass(){
+    document.querySelector(.'#hi').classList.add('fs-50');
+    
+    
+    $('#hi').addClass('fs-50')
+}
+
+function removeClass(){
+    document.querySelector(.'#hi').classList.remove('fs-50');
+    
+    $('#hi').removeClass('fs-50')
+}
+
+function hasClass(){
+    document.querySelector(.'#hi').classList.contains('fs-50');
+    
+    console.log($('#hi').hasClass('fs-50'))
+}
+
+function toggleClass(){
+    document.querySelector(.'#hi').classList.toggle('bg-pink');
+    
+    $('#hi').toggleClass('bg-pink')
+}
+

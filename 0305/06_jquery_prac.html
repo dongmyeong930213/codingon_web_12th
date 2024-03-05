@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div {
+            width: 100px;
+            height: 100px;
+        }
+        div:hover {
+            cursor: pointer;
+        }
+        .red {
+            background-color: red;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .purple {
+            background-color: purple;
+        }
+</style>
+</head>
+<body>
+    <div class="purple" onclick="changeColor();"></div>
+    <script>
+        
+        
+        //클릭할대마다 색상이 바뀌는 코드로 완성하기 // 버튼 누를때 색상이 바뀌는 코드 완성하기
+        let colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+        function changeColor(){
+            let currentClass = $('div').attr('class')
+         //   console.log(currentClass)
+        let i = colors.indexof(currentClass);
+        // console.log(i)
+
+        if(i == colors.length - 1) {
+            console.log('보라색입니다')
+        } else{
+            console.log(i)
+        
+        }
+
+        }
+    </script>
+</body>
+</html>
