@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 { grid-area: 메뉴1}
+        .item2 { grid-area: 메뉴2}
+        .item3 { grid-area: 메뉴3}
+        .item4 { grid-area: 메뉴4}
+        /* 클래스 이름에 별칭을 만들어줌 */
+        .grid-container {
+             background-color: skyblue;
+             
+             display: grid;
+             grid-template-areas: 
+             '메뉴1 메뉴2 메뉴3 메뉴4'
+             ;
+
+        }
+        /* grid-template-areas: 반응형에 따라 쉽게 레이아웃을 변경할 수 있다.(display 주기) */
+        .grid-container> div{
+             background-color: rgba(255, 255, 255, 0.8);
+             text-align: center; padding: 20px 0;
+             font-size: 10px;
+        }
+            </style>
+</head>
+<body>
+    
+    <h1>실습3</h1>
+    <div class="grid-container">
+    <div class="item1">메뉴1</div>
+    <div class="item2">메뉴2</div>
+    <div class="item3">메뉴3</div>
+    <div class="item4">메뉴4</div>
+</div>
+</body>
+</html>
